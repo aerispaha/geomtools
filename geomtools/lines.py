@@ -1,6 +1,7 @@
 class Line(object):
 
     def __init__(self, m, b, x_min = None, x_max=None, y_min=None, y_max=None):
+
         self.m = m
         self.b = b
         self.x_min = x_min
@@ -96,11 +97,3 @@ class LineSegment(Line):
         self.x_max = max(x1, x2)
         self.y_min = min(y1, y2)
         self.y_max = max(y1, y2)
-
-
-    # def __str__(self):
-    #
-    #     return 'y = {}x + {}, ({} <= x < {})'.format(round(self.m, 3),
-    #                                                  round(self.b, 3),
-    #                                                  self.x_min,
-    #                                                  self.x_max)
